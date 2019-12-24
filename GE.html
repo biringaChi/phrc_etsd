@@ -1,0 +1,404 @@
+<!DOCTYPE html> 
+<head>
+<title> General Engineering | ETSD 
+</title>
+
+	<meta name="keywords" content="general, engineering, section, unit">
+	<meta name="charset" content="UTF-8">
+    <meta name="author" content="Biringa G.">
+	<meta name="description" content="PHRC"/>
+	<meta name="date" content="8-2015" scheme="MM-YYYY">
+	<meta name="robot" content="index,follow">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" /> 
+    <meta http-equiv="refresh" content="10">
+
+    <link rel="icon" href="Images/etsd4.ico"/>
+        <style  type="text/css">
+
+          #banner {
+             margin-left:auto; 
+             margin-right:auto; 
+             width:1000px;  
+          }
+
+          #banner img { 
+             max-width:1000px; 
+             max-height:300px; 
+          }
+ 
+          #main {
+            margin-left:auto;
+            margin-right:auto;
+            width:1000px; 
+          }    
+
+          #main-content {
+            padding:20px;
+            width:625px; 
+            float:left;
+          }  
+
+          #widget-container {
+            padding:15px;
+            width:280px; 
+            float:right;
+          }   
+
+          .widget-content {
+             margin:20px; 
+             padding:1px;
+             width:250px;
+             background-color:#DDDDDD; 
+          }    
+
+          .widget-title {
+             font-weight:bold;
+             padding:10px;
+             background-color:#EEEEEE;  
+          }    
+
+          .widget-text {
+             padding:10px;
+             background-color:#FCFCFC;   
+          }    
+
+          @media (min-width: 481px) and (max-width: 768px) {
+            #banner { width:740px; }
+            #banner img { max-width:740px; max-height:222px; }
+            #main { width:740px; }            
+            #main-content { width:450px; float:left; }
+            #widget-container { width:200px; float:right; }
+            .widget-content { width:160px; }
+          } 
+
+          @media (min-width: 321px) and (max-width: 480px) {
+            #banner { width:450px; }
+            #banner img { max-width:450px; max-height:135px; }
+            #main { width:450px; }            
+            #main-content { width:400px;}
+            #widget-container { width:400px; }
+            .widget-content { width:120px; margin:5px; float:left;}
+            .widget-text { display:none; } 
+          }
+
+          @media (max-width: 320px) {
+            #banner { width:275px; }
+            #banner img { max-width:275px; max-height:83px; }
+            #main { width:250px; }            
+            #main-content { width:250px;padding:0px;}
+            #widget-container { width:250px; padding:0px; }
+            .widget-content { width:250px; margin:5px;}
+            .widget-text { display:none; } 
+          }
+
+font-face { 
+    font-family: colleged; 
+    src: "Fonts/colleged.ttf";  
+  }
+
+font-face {
+    font-family: OptimusPrinceps;
+    src: "Fonts/OptimusPrinceps.ttf";
+  }
+
+   font-face {
+    font-family: yorkwhiteletter;
+    src:"Fonts/yorkwhiteletter.ttf";
+  }
+
+    body {
+        background-color:#fff; 
+        margin:auto; 
+        max-width:800px;
+    }
+
+    .header { 
+        text-align:center; 
+        position: fixed;
+        width:800px; 
+        min-height:166px;
+        padding-right:12px; 
+        margin-top:-50px; 
+        background-color:#fff; 
+        font-size:18px; 
+        color:#006400; 
+        font-weight:bold; 
+        font-family: colleged;  
+        line-height:10px;
+    }
+
+    .search {
+        width:inherit;
+        height: 25px;
+        margin-top: -50px;
+        text-align:right; 
+        background-color: #fff;
+    }
+
+    .navbar {
+        width:800px;
+        min-height:40px; 
+        background-color:#006400; 
+        font-size:15.7px;
+        margin-left: 0px;
+        padding-right: 12px;
+        padding-left: 0px; 
+        font-weight:bold; 
+        position: fixed;
+        color:white; 
+        line-height:15px; 
+        font-family:courier; 
+        text-align:center; 
+        margin-top: 0px;
+    }
+
+    .navbar li {
+        display:inline;
+    }
+
+    #navb li a:hover {
+        color:#006400; 
+        background-color: #fff;
+        padding-top: 19px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 14px;
+        transition:400ms;
+        font-size: 20px;
+    }   
+
+    .slider img {
+        border-radius: 0px 0px 5px 5px;
+        width:101.5%; 
+        height:300px; 
+        background-color:#F7F7F7; 
+        margin-top: 158px;
+    }
+
+    .breadcrumb {
+        min-height:20px; 
+        width:96%; 
+        font-size: 14px;
+        background-color:#fff; 
+        padding:5px;
+        margin-top: -11px;
+    }
+      
+    .content {
+        box-shadow:0px 0px 0px #ACACAC; 
+        min-height: 1535px; 
+        width:99%;  
+        background-color:#fff;
+        margin-top: -6px; 
+        padding:10px;
+    }
+
+    #ax { 
+        min-height:10px;
+        margin-top: 10px;
+        font-weight: bold;
+        padding-left: 8px;
+        color:#006400; 
+        font-family: OptimusPrinceps;
+    }
+
+    .x  {
+        box-shadow:0px 10px 10px 0px #D6D6D6;
+        border-radius: 5px; 
+        min-height: 240px;
+        margin-left: 3px;
+        width:98%;
+        padding: 15px;
+        color: none;
+        background-color: #F1F1F1;
+        text-align: left;
+        padding: 5px;
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+
+    a {
+        color:white; 
+        text-decoration:none; 
+        padding: 25px;
+        transition:600ms;
+    }
+
+    a:hover  {
+        color:#006400; 
+        background-color: #fff;
+        padding-top: 18px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        transition:400ms; 
+        font-size: 20px;
+    }   
+
+    .footer {
+        width:101%; 
+        min-height:40px; 
+        font-size:15px;
+        margin-top: -10px;
+        line-height:40px; 
+        background-color:#006400; 
+        color:#fff; 
+        font-weight:bold; 
+        text-align:center; 
+        padding-left:4px;
+    }
+
+</style> 
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h4 style="padding:55px; padding-right:0px; margin-top:50px; color:#006400;"> ENGINEERING AND TECHNICAL SERVICE DEPARTMENT </h4>
+
+<img src="Images/etsd2.png" style="height:70px; width:70px; float:left; padding-left:56px; margin-top:-115px;">
+
+<div class="search">
+
+        <form action="https://www.wikipedia.org">
+        <input type="text" name="Search" placeholder="Search phrcetsdng.com..."/>
+        <input type="submit" value="Search!"/>
+        <form> </form>
+
+	<div id="navb" class="navbar">
+
+		<ul style="padding-left:0px; padding-top:6px;">
+		    <li> <a href="index.html" target="_self"> HOME </a> </li>
+    	    <li> <a href="phrc.html" target="_self"> ABOUT PHRC </a> </li>
+            <li> <a href="services.html" target="_self"> SERVICES </a> </li>
+            <li> <a href="workforce.html" target="_self"> WORKFORCE </a> </li>
+    	    <li> <a href="contact.html" target="_self"> CONTACT </a> </li>
+        </ul>
+
+	</div> </div> </div>
+
+    <div class="slider">
+
+        <img src="Images/ge3.png" alt="GeneralEngineering">
+
+    </div>
+
+	<div class="content">
+
+    <div class="breadcrumb">
+
+        You are here: <a href="index.html" style="color:black; transition:none; font-size:14px; padding:0px"> <i> Home </a> </i>&raquo; 
+                       <a href="services.html" style="color:black; transition:none; font-size:14px; padding:0px"> <i> Services </a> </i>&raquo;
+                       <i> <b> General Engineering </b>  </i> 
+    </div>
+
+    <div id="ax">
+
+		GENERAL ENGINEERING
+
+    </div>
+
+    <div class="x" style="margin-top:10px;">
+
+	<p style="margin-top:10px; font-family:OptimusPrinceps; color:#00728F;"> <b> Technical Library </b> </p>
+
+	<img src="Images/Books.gif"alt="library" style="height:190px; width:30%; float:right; margin-top:-10px;">
+
+	<p style="margin-top:-10px;"> This unit is in charge of information dissemination to the entire refinery. <br />
+	To carry out most of its functions, <abbr title="Engineering and Technical Service Department"> ETSD </abbr></title> relies on published data.
+    Therefore, it is very important to maintain a Technical Library to procure and retain all relevant publications including reports and books. <br />
+    The Library's present holdings include materials in a variety of fields covering pure and applied sciences, engineering, industrial processes, business, accounting, computer science and medicine. <br />
+	These materials are available for the use of <abbr title="PortHarcourt Refining Company Limited"> PHRC </abbr></title> employees who are intrested in brodening their knowledge in these fields.
+	Duties and Responsibilities of a Librarian in this section, includes: </p>
+			<ul style="margin-top:-10px;">
+				<li> They keep current on resources and select publications for the library's collection. </li>
+				<li> They require a knowledgeable command of numerous information sources to select material appropriate to the library's needs. The librarian categorizes, prepares, and catalogs these materials. </li> 
+				<li> They also recommend material and help individuals find the information that they need. </li> 
+				<li> They analyze and organize collections by subject. </li> 
+				<li> They educate individuals on how to use the library systems to find the information they need. </li> 
+				<li> Librarians may also provide special classes. </li>
+			</ul> </p>
+
+        </div> <br />
+
+        <div class="x" style="min-height:350px;">
+
+			<p style="color:#00728F; font-family:OptimusPrinceps;"> <b> Plant Monitoring </b> </p> <br /><br />
+
+			<img src="Images/pmm.png"alt="PlantMonitoring" style="height:190px; width:40%; float:right; margin-top:0px;">
+
+			<p style="margin-top:-40px;"> Plant Monitoring is responsible for the routine monitoring of the <br /> performance of the process plants, equipments, and facilities in the Refinery. <br /> These Includes: <br /> </p>
+			<ul style="margin-top:-10px;">
+				<li> Crude Oil Distillation Unit (CDU). </li>
+				<li> The Catalytic Reformer Unit (CRU). </li>
+				<li> The Liquified Petroleum Gas Plant (LPG). </li>
+				<li> The Gasoline Blending facilities (GBF). </li>
+				<li> Utitlites, Heat Exchangers, Furnaces and Pumps. </li>
+				<li> Compressors, Tankage, Marketing Area and Jetty Operations. </li>
+			</ul>
+			<p style="margin-top:-10px;">
+                The routine monitoring is aimed at ensuring a safe, and maximum operating and economic efficiency of the process plants, equipments, and facilities. <br /> It would also aid in technical troubleshooting which is also a responsiblity of the section.
+			    Monitoring involves essentially gathering all the pertinent operating data on a routine basis. <br /> Such data include:
+			    Operating Temperatures, Pressures and Qualities, compositions and yields of feeds streams, intermediate products and final products.
+			    These data areb analysed routinely and potential problem areas highlighted. From these analysis possible solutions to such potential
+                problems are recommended. <br /> Also any observed changes which might lead to more efficient or safer operations are highlighted for
+                incorporation into the standard operating procedure. 
+            </p>
+
+        </div> <br />
+
+            <div class="x">
+
+			<b style="color:#00728F; font-family:OptimusPrinceps;"> Works </b> <br /><br />
+
+			<img src="Images/works.png"alt="Works" style="height:190px; width:30%; float:right; margin-top:0px;">
+
+			<p style="margin-top:-10px;"> This unit is in charge of all projects related to civil structures within the refinery and in the plant.
+			The works unit, not only maintains existing facilities, but also engages in the formulation to completion of minor building/Civil Engineering projects, it partakes in the formulation of briefs for the preparation of the scheme by others. <br />
+			The activities include: <br />
+		<ul style="margin-top:-10px;">
+			<li> Scrutinizing of schemes prepared. </li>
+			<li> Working with others to prepare and present to Management suitable proposals for consideration and execution. </li>
+			<li> Preparation of specifications, Bill of Quantities and other related tender documents for major works to be carried out by contrect.</li>
+			<li> Supervision of Contractors on major works to ensure that the contract works are carried out in accordance with the specifications. </li>
+		</ul> </p>
+
+    </div> <br />
+
+        <div class="x">
+
+		<b style="color:#00728F; font-family:OptimusPrinceps;"> Projects </b> <br /><br />
+
+		<img src="Images/gff.gif"alt="Projects" style="height:190px; width:20%; float:right; margin-top:15px;">
+
+		<p style="margin-top:-10px;"> This unit is into ensuring that Project Management processes are adhered to in execution of project in  <abbr title="PortHarcourt Refining Company Limited"> PHRC. </abbr></title>
+		Handles execution and monitoring of projects, to ensure that pre-defined project requirements are met.
+		As required by ISO 9001:2008, the section is guided by a standard operative procedures for project management and engineering design.
+		Projects handled can be in-hand projects (using in-hand capabilities) or third-party projects (third-party executed or awarded projects).
+		The unit is headed by a Superintendent Project. Engineer W.S. Opusunju. Stages of project management include:
+		<ul style="margin-top:-10px;">
+		<li> Initiation : Indentifying the project and specific project requirement. And obtaining formal management approval. </li>
+			
+			<li> Planning : Developing a plan for monitoring, controlling and executing project. Carrying out stakeholders analysis to determine stakeholders expectation and requirement for the projects so as to develop a detailed scope of work and cost estimate for the project.</li>
+
+			<li> Execution and Control : This stage begins with a project kick-off meeting of all project stakeholders. And also monitoring the progress of the projecr through regular progress review meeting with relevant Stakeholders. <br /> It also involves identification, tracking and control of changes to the project scope and obtaining management approval for any relevant change to the initial project requirement. </li>
+		
+			<li> Close Out Stage : At this stage, you ensure that all components of the project has been completed and signed. <br /> 
+			This involves meeting with all relevant stakeholders in a project close out meeting so as to produce project close out report deatailing lessons learnt and any pending issues for future actions. <br />
+			Examples of recent project carried out by the unit includes: <br />
+			&raquo; Rehabilitation of Demineralized water plant in Power Plant Utilities (PPU). <br />
+			&raquo; Rehabilitation of crude oil storage tank. <br />
+			&raquo; Provision of alternative crude oil receipt line. Using marine vessels to solve the problem of supply of crude.&nbsp; &nbsp; &nbsp; Neccessitated by incessant oil pipline. </li>
+			
+	</div> </div>
+	
+	<div class="footer">
+
+    &#169; <b style="font-family:yorkwhiteletter;"> 2015 ETSD All Rights Reserved </b>
+
+    </div>
+
+</body>
+</html>
